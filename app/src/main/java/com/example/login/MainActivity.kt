@@ -2,6 +2,7 @@ package com.example.login
 
 import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -53,6 +54,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Toast.LENGTH_LONG
             ).show()
 
+            val intent = Intent (this, MainActivity2::class.java)
+            startActivity(intent)
+
         } else  {
             Toast.makeText(
                 this,
@@ -61,6 +65,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             ).show()
         }
     }
+
 
 }
 
