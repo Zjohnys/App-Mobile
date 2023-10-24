@@ -54,7 +54,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Toast.LENGTH_LONG
             ).show()
 
-            val intent = Intent (this, MainActivity2::class.java)
+            val intent = Intent (this, Contatos::class.java)
             startActivity(intent)
 
         } else  {
