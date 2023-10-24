@@ -20,7 +20,7 @@ class Contatos : AppCompatActivity(), AdapterView.OnItemClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_contatos)
+        setContentView(R.layout.`activity_main2.xml`)
 
         listview = findViewById(R.id.listMeses)
         listview.onItemClickListener = this

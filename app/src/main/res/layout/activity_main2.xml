@@ -5,99 +5,87 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/night"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <View
         android:id="@+id/containerLogin"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="500dp"
         android:layout_marginHorizontal="20dp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.45" />
 
     <TextView
         android:id="@+id/txtTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aniversário"
-        android:textSize="30sp"
+        android:layout_marginTop="12dp"
+        android:text="View"
         android:textColor="@color/white"
+        android:textSize="30sp"
         android:textStyle="bold"
-        android:layout_marginTop="30dp"
-        app:layout_constraintTop_toTopOf="@id/containerLogin"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
         app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        />
-
-    <EditText
-        android:id="@+id/editNome"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nome"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="15dp"
-        android:inputType="text"
-        android:maxLines="1"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/txtTitle"
         app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        />
-
-    <EditText
-        android:id="@+id/editDate"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Data"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="15dp"
-        android:inputType="date"
-        android:maxLines="1"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/editNome"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        />
-
-    <EditText
-        android:id="@+id/editPhone"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Fone"
-        android:background="@drawable/container_edit_text_login"
-        android:padding="15dp"
-        android:inputType="phone"
-        android:maxLines="1"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/editDate"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
-        />
-
-
+        app:layout_constraintTop_toTopOf="@id/containerLogin" />
 
     <Button
-        android:id="@+id/btPesquisar"
+        android:id="@+id/btNovo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pesquisar"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textStyle="bold"
-        android:padding="15dp"
-        android:backgroundTint="@color/blue"
-        app:cornerRadius="30dp"
         android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/editPhone"
-        app:layout_constraintStart_toStartOf="@id/containerLogin"
-        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        android:layout_marginBottom="265dp"
+        android:backgroundTint="@color/blue"
+        android:padding="15dp"
+        android:text="Novo"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="@id/containerLogin"
-        />
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle"
+        app:layout_constraintVertical_bias="0.426" />
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="265dp"
+        android:backgroundTint="@color/blue"
+        android:padding="15dp"
+        android:text="Mostrar"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/containerLogin"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toBottomOf="@id/btNovo"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btSair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="@color/red"
+        android:padding="15dp"
+        android:text="Sair"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/containerLogin"
+        app:layout_constraintEnd_toEndOf="@id/containerLogin"
+        app:layout_constraintStart_toStartOf="@id/containerLogin"
+        app:layout_constraintTop_toBottomOf="@id/btNovo"
+        app:layout_constraintVertical_bias="0.534" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
